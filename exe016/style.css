@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+
+body {
+    background-image: linear-gradient(to right, #86BBD8, #336699 );
+
+
+}
+
+
+main {
+        background-color: white;
+        border-radius: 10px;
+        /* border-radius cria bordas arredondas, nesse caso no background color */
+        box-shadow: 5px 5px 3px #a93f5454 ;
+        /*box-shadow cria uma sombra, nesse caso no background color */
+        width: 90%;
+        /* width é largura */
+        max-width: 950px;
+        /* max-widht define até o maximo que aquele elemento pode ficar na tela, nesse caso o background color */
+        padding: 10px;
+        /* padding é o espaçamento interno */
+        margin: auto;
+        /* margin é o espaçamento externo do elemento nesse caso no backgroud color que criou uma caixa */
+        
+
+}
+
+h1 {
+    color: #2F4858;
+    text-align: center;
+    text-shadow: 1px 1px 2px #a93f5494 ;
+
+}
+h2 {
+    color: #F2545B;
+}
+p {
+    text-align: justify;
+}
