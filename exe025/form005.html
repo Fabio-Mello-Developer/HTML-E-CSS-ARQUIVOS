@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            background-color: rgba(241, 194, 194, 0.349);
+            
+        }
+        fieldset {
+           background-color: rgba(255, 228, 196, 0.637);
+        }
+        h1 {
+            border: 1px 1px 1px black;
+            border-radius: 21px;
+            background-color: rgb(87, 15, 15);
+            text-align: center;
+            margin: 5vh 25vw;
+            color: blanchedalmond;
+            
+
+        }
+        legend {
+            text-align: center;
+        }
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 7vh 22vw;
+            background-color: rgba(255, 235, 205, 0.5);
+        }
+        .button { 
+            position: relative;
+            left: -41px;
+            right: 0px;
+            top: 4px;
+            bottom: 1px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 50%;
+        }
+        .esti {
+            border: 2px solid black;
+            margin: 2%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="esti">
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.py" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="femi">
+                <label for="femi">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+        
+                <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol </label><br>
+                <input type="checkbox" name="esbas" id="esbas" checked> <label for="esbas">Basquete</label> <br>
+                <input type="checkbox" name="esnat" id="esnat"> <label for="esnat">Natação</label> <br>
+                <input type="checkbox" name="esten" id="esten"> <label for="esten">Tênis </label><br>
+            </fieldset>
+        
+                <label for="button" class="button">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </label>
+        </form>
+    </div>
+</body>
+</html>

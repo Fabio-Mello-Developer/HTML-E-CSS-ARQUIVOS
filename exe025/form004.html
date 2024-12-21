@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            label, input {
+            padding: 2px;
+            margin: 2px;
+            
+        }
+        legend {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.py" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <div>
+                <label for="email" class="etiq">E-mail</label>
+                <input type="email" name="email" id="email" class="inp">
+            </div>
+            <div>
+                <label for="tel">Telefone</label class="etiq">
+                <input type="tel" name="tel" id="tel" autocomplete="tel-national" pattern="^\/(\d{2}\)\d{4,5}-\d{4}5$" required placeholder="(xx) xxxxx-xxxx" class="inp">
+            </div>
+        </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+       
+
+
+
+
+
+
+    </form>
+</body>
+</html>
