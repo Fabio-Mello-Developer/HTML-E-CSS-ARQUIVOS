@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.py" method="get" autocomplete="on">
+        <p>
+            <label for="num">Número</label>
+            <input type="range" name="num" id="num" min="0" max="10" value="5" oninput="val.innerHTML = Number(num.value)">
+            <output id="val">5</output>
+        </p>
+        <p>
+            <label for="ano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="ano" min="1900" max="2000" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+
+
+
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>
